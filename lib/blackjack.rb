@@ -39,8 +39,8 @@ end
 
 def hit?
   # code hit? here
-  initial_round += deal_card
-  initial_round
+  new_total = initial_round + deal_card
+  new_total
 end
 
 def invalid_command
