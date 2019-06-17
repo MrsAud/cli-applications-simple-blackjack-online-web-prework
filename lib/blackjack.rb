@@ -39,8 +39,14 @@ end
 
 def hit?
   # code hit? here
-  new_total = initial_round + deal_card
-  new_total
+  prompt_user
+  get_user_input
+    if get_user_input == 'h'
+      new_total = initial_round + deal_card
+    elsif
+      new_total = initial_round
+    else invalid_command
+    end
 end
 
 def invalid_command
